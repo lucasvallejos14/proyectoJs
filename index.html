@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <title>El Clima</title>
+</head>
+
+<body>
+    <main>
+        <form id="form-search">
+
+            <div class="cajaBusqueda" id="cajaBusqueda">
+
+                <img class="iconoMapa" src="./assets/imagenes/map-pin.svg">
+
+                <input type="text" autocomplete="off" placeholder="Ubicacion" class="busqueda" id="caja-busqueda">
+            
+            </div>
+        </form>
+        <div class="tareas">
+            <h1>Hoy tengo que..</h1>
+            <form id="tareas" class="tareas_form">
+                <input class="tareas_input" type="text" placeholder="Ir a..." id="irA">
+
+                <input class="tareas_input" type="text" placeholder="Llevar..." id="llevar">
+
+                <input class="tareas_input" type="text" placeholder="Como ir..." id="comoIr">
+
+                <input class="tareas_input" type="text" placeholder="Importante que..." id="importanteQue">
+
+                <button class="tareas_boton" type="submit" id="botonTareas">Guardar Tarea</button>
+
+            </form>
+
+        </div>
+
+        <div class="listaTareas">
+            <h1 class="listaTareas_titulo">Tu Rutina de hoy</h1>
+            <hr>
+
+            <div class="listaTareas_tareas" id="listaDeTareas">
+
+            </div>
+        </div>
+
+        <div class="detalles">
+
+            <div class="ubicacion" id="ubicacion">
+                <h4>Consultá el Clima</h1>
+            </div>
+
+            <div class="temperatura" id="temperatura">
+                <img class="temp-img" id='temp-img'src="./assets/imagenes/iconoportada.png">
+                <h1></h1>
+            </div>
+            
+            
+        </div>
+        <div class="pronostico" id="pronostico">
+        
+
+            <div class="hoy">
+               
+                <p class="dias">Hoy</p>
+                <p class="VariacionesTemperaturas" id="VariacionesTemperaturas">La Máxima / La Mínima</p>
+            </div>
+
+    </div>
+
+        <div id="map">
+
+        </div>
+
+       
+    </main>
+    
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="/assets/app.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7wULIdUFAo5iAYO-RUjhmpMFgRm63ssU&libraries=places&callback=initMap" ></script>
+    <script src="/assets/map.js"></script>
+    <script src="/assets/tareas.js"></script>
+</body>
+</html>
